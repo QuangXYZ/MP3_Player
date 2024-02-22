@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         songAdapter = new SongAdapter(AdapterSongs,MainActivity.this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(songAdapter);
-        recyclerView.setNestedScrollingEnabled(false);
+
 
 
 
