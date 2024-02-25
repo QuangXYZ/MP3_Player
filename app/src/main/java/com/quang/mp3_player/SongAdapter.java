@@ -45,6 +45,7 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder>{
         holder.songName.setText(song.name);
         if (song.isDownload) {
             holder.download.setVisibility(View.GONE);
+            holder.play.setEnabled(true);
             holder.play.setOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -79,6 +80,7 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MyViewHolder>{
         }
         else {
 
+            holder.download.setVisibility(View.VISIBLE);
             holder.download.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
